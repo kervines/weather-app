@@ -9,12 +9,12 @@ body {
   height: 100vh;
   display: grid;
   place-content: center;
-  background-color: #45e;
+  background-color: rgb(124, 137, 255);
   color: #fafafa;
   font-family: 'Poppins', sans-serif;
 }
 .container > h1 {
-  /* margin-bottom: 10px; */
+  margin-bottom: 10px;
 }
 button i {
   color: #45e;
@@ -34,18 +34,19 @@ button i {
   gap: 5px;
 }
 #form input {
-  font-size: 16px;
   padding: 5px 10px;
   border-radius: 60px;
   border: none;
+  font-family: 'Poppins', sans-serif;
 }
 #form input::placeholder {
-  color: #6977f1;
+  color: #6977f181;
 }
 #form button {
   padding: 10px;
   border-radius: 50%;
   border: none;
+  cursor: pointer;
 }
 /* Style Result */
 .result-container {
@@ -53,6 +54,7 @@ button i {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 .temp-container {
   text-align: center;
   grid-column: 1/-1;
