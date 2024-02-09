@@ -112,3 +112,9 @@ button i {
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 425px) {
+  .container {
+    width: 320px;
+  }
+}
