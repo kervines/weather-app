@@ -16,16 +16,14 @@ async function fetchWeather(city) {
     `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
   );
   const dadosWeather = await responseWeather.json();
-  console.log(dadosWeather);
   const {
     main: { temp, humidity },
     wind: { speed },
     weather: [{ icon }],
   } = dadosWeather;
-  console.log(icon);
 
   createResult(
-    inputCity.value,
+    inputCity.value.toUpperCase(),
     temp.toFixed(1),
     humidity,
     (speed * 3.6).toFixed(1),
