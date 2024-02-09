@@ -113,8 +113,8 @@ button i {
   }
 }
 
-@media (max-width: 425px) {
+/* @media (max-width: 425px) {
   .container {
     width: 320px;
   }
-}
+} */
